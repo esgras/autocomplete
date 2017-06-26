@@ -29,7 +29,6 @@ body {
     padding: 0;
     list-style: none;
     background: lightgrey;
-    /*border-radius: 0 0 10px 5px;*/
     border: 1px solid slategray;
 }
 
@@ -40,7 +39,4 @@ body {
 
 .suggestions li.active {
     background: cadetblue;
-    border-top: 1px solid darkslateblue;
-    border-bottom: 1px solid darkslateblue;
-    /*padding: 0 10px;*/
 }

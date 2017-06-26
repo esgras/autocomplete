@@ -7,9 +7,10 @@ use app\Db;
 $db = Db::getInstance();
 
 if (isset($_POST['ajax']) && $_POST['input']) {
-    $query = 'SELECT name FROM languages WHERE name LIKE "%' .
-        $_POST['input'] . '%"';
-    $stmt = $db->query($query);
+    $query = 'SELECT name FROM languages WHERE name LIKE ?';
+    $input = "%" . $_POST['input'] . "%";
+    $stmt = $db->prepare($query);
+    $stmt->execute([$input]);
     $data = $stmt->fetchAll();
     $arr = [];
 
