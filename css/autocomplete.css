@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.autosuggest {
+    position: relative;
+    width: 450px;
+    margin: 5px auto 0 ;
+}
+
+.autosuggest-field {
+    display: inline-block;
+    padding-right: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.loader {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 2px;
+}
+
+.suggestions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: lightgrey;
+    /*border-radius: 0 0 10px 5px;*/
+    border: 1px solid slategray;
+}
+
+.suggestions li {
+    border-top: 1px solid dimgray;
+    padding: 5px 10px;
+}
+
+.suggestions li.active {
+    background: cadetblue;
+    border-top: 1px solid darkslateblue;
+    border-bottom: 1px solid darkslateblue;
+    /*padding: 0 10px;*/
+}

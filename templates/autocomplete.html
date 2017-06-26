@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>AUTOCOMPLETE</title>
+    <link rel="stylesheet" href="/css/autocomplete.css">
+</head>
+<body>
+    <div class="autosuggest">
+        <input type="text" id="field" class="autosuggest-field">
+        <img id="ajax-loader" src="/img/ajax-loader.gif" alt="" class="loader">
+        <ul class="suggestions">
+            <li>Lorem ipsum.</li>
+            <li >Lorem ipsum.</li>
+            <li class="active">Lorem ipsum.</li>
+        </ul>
+        <div class="errors"></div>
+        <div id="suggest"></div>
+    </div>
+
+    <button id="clear">Clear</button>
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/autocomplete.js"></script>
+</body>
+</html>

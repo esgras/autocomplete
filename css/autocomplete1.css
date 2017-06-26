@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.autosuggest {
+	width: 450px;
+	margin: 10px auto 0;
+	position: relative;
+}
+
+.autosuggest-field {
+	border-radius: 0;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+
+.loader {
+	position: absolute;
+	right: 4px;
+	top: 5px;
+	display: none;
+}
+
+.suggestions {
+	padding: 0;
+	margin: 0;
+	background: silver;
+	border: 1px solid teal;
+	border-top: none;
+}
+
+.suggestions li {
+	list-style: none;
+	border-top: 1px solid navy;
+	padding: 5px;
+}
+
+.suggestions li.active {
+	list-style: none;
+	border-top: 1px solid magenta;
+	padding: 5px;
+	background: lime;
+	border-top: 1px solid black;
+
+}
